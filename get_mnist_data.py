@@ -1,7 +1,11 @@
 import numpy as np
 import gzip
 
-# Took this code from ChatGPT but basically it removes the headers
+# Loads the MNIST data using only gzip and numpy, no additional libraries
+# this offers a good jumping off point when wanting to start with numpy arrays
+# when using MNIST for benchmarking
+
+# Mocked up using ChatGPT
 
 def parse_images(file_path):
     with gzip.open(file_path, 'rb') as f:
