@@ -1,7 +1,7 @@
 import numpy as np
 
-# Took this code from ChatGPT but basically it creates a multilayer perceptron using relu and softmax
-# With the desired specification
+# Creates a multilayer perceptron with layers input 28*28 -> 100 -> ReLU -> 10 -> softmax using only numpy
+# Mocked up using ChatGPT
 
 # Activation Functions
 def relu(x):
@@ -63,7 +63,7 @@ def train_nn(X, Y, W1, W2, epochs=100, lr=0.01):
 
         # Compute Loss
         Y_onehot = one_hot(Y, num_classes=10)  # Convert labels to one-hot
-        loss = cross_entropy_loss_d(Y_pred, Y_onehot)
+        loss = cross_entropy_loss(Y_pred, Y_onehot)
         losses.append(loss)
 
         # ---- BACKWARD PASS ----
