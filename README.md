@@ -10,3 +10,7 @@ Challenge 2: Plan to implement a multilayer perceptron in PyTorch with the flow:
 28*28 input -> 100 hidden nodes -> ReLU -> 10 output nodes -> softmax and compare performance with arn_generic.py
 
 Challenge 3: Use PyTorch tensors to create a toy-example that performs the same way as the overloaded addition operation does for xlnsnp arrays.
+
+Other things I tried:
+
+- Creating a version of arn_generic.py using only numpy and then inserting xlns weights into the system and running the code
